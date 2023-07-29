@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,13 +44,26 @@
                             <a class="nav-link" href="./aboutus.html">About Us</a>
                         </li>
                     </ul>
-                    <form class="" style="display: flex; justify-content: center; align-items: center;">
-                        <button style="margin: 0 5px;" type="button"
-                            class="btn form-control btn-warning mr-sm-0 my-2 my-sm-0 btn-sm"
-                            onclick="window.location.href=`./signup.php`;"><b>Signup</b></button>
-                        <button type="button" class="btn form-control btn-outline-light my-2 my-sm-0 btn-sm ml-lg-3"
-                            onclick="window.location.href=`./login.php`;"><b>Log In</b></button>
-                    </form>
+                    <div class=""
+                        style="display: flex; justify-content: center; align-items: center; padding:0; width:300px">
+                        <?php
+                        if (isset($_SESSION['username'])) {
+                            echo '
+                            <form style="background-color:rgba(0,0,0,0); padding:0; margin: 0 5px;" class="btn form-control btn-sm" name="profile" action="./profile.php">
+                            <button onclick="window.location.href=`./profile.php`;" class="btn form-control btn-warning mr-sm-0 my-2 my-sm-0 btn-sm"><b>Profile</b></button></form>
+                            <button type="button" class="btn form-control btn-outline-light my-2 my-sm-0 btn-sm ml-lg-3"
+                            onclick="window.location.href=`./includes/logout.inc.php`;"> <b>Log Out</b></button>';
+                        } else {
+                            echo '
+                            <button style="margin: 0 5px;" type="button"
+                                class="btn form-control btn-warning mr-sm-0 my-2 my-sm-0 btn-sm"
+                                onclick="window.location.href=`./signup.php`;"><b>Signup</b></button>
+                            <button type="button" class="btn form-control btn-outline-light my-2 my-sm-0 btn-sm ml-lg-3"
+                                onclick="window.location.href=`./login.php`;"><b>Log In</b></button>';
+                        }
+
+                        ?>
+                    </div>
                 </div>
             </div>
         </nav>

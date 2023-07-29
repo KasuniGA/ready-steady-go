@@ -115,7 +115,8 @@ include_once "./site-parts/header.php";
                         </div>
                     </div> -->
                 <div class="col-12 mt-4">
-                    <button style="width: 100%;" class="btn btn-warning col-md-12 btn-sm" type="submit"><b>Sign
+                    <button name="signup" style="width: 100%;" class="btn btn-warning col-md-12 btn-sm"
+                        type="submit"><b>Sign
                             Up</b></button>
                 </div>
             </form>

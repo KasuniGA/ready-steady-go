@@ -42,7 +42,8 @@ include_once "./site-parts/header.php";
                         id="validationDefault02" placeholder="Password" required>
                 </div>
                 <div class="col-12 mt-4">
-                    <button style="width: 100%;" class="btn btn-warning col-md-12 btn-sm" type="submit"><b>Log
+                    <button name="login" style="width: 100%;" class="btn btn-warning col-md-12 btn-sm"
+                        type="submit"><b>Log
                             In</b></button>
                 </div>
             </form>
