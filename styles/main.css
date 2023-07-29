@@ -1,3 +1,7 @@
+body {
+    background-color: var(--color-background-defalt);
+}
+
 .defalt-container-theme {
 
     box-shadow: 0px 0px 10px var(--color-scale-gray-8);

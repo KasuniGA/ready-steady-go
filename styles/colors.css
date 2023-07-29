@@ -104,7 +104,3 @@
     --color-scale-coral-8: #640d04;
     --color-scale-coral-9: #460701;
 }
-
-body {
-    background-color: var(--color-background-defalt);
-}
