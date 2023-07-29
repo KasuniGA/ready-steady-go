@@ -34,6 +34,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./about-us.html">About Us</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./new-post.php">New post</a>
+                        </li>
                     </ul>
                     <div class=""
                         style="display: flex; justify-content: center; align-items: center; padding:0; width:300px">

@@ -26,7 +26,7 @@
             <img src="./resources/img/b1.jpg" class="img-fluid" alt="...">
         </div>
         <div class="post-container-style">
-            <div style="">
+            <div>
                 <button type="button" class="btn btn-warning btn-sm">
                     Likes <span class="badge bg-dark">45</span>
                 </button>
