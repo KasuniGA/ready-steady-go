@@ -24,12 +24,13 @@ body {
 .slide-content {
   margin: 0 40px;
   overflow: hidden;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 
-.card {
-  border-radius: 25px;
-  background-color: #FFF;
+.card-custom1 {
+  /* border-radius: 25px; */
+  background-color: var(--color-background-defalt);
+  border: 2px solid var(--color-border-default);
 }
 
 .image-content,
@@ -45,27 +46,6 @@ body {
   position: relative;
   row-gap: 5px;
   padding: 25px 0;
-  background-color: var(--button-yello-color);
-}
-
-.overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--button-yello-color);
-  border-radius: 25px 25px 0 25px;
-}
-
-.overlay::before,
-.overlay::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
   background-color: var(--button-yello-color);
 }
 
