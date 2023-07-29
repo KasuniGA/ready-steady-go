@@ -11,35 +11,85 @@ include_once "./site-parts/header.php";
         </section>
         <div class="light-container-style signup-box">
 
-            <form class="row g-1 text-white">
+            <form class="row g-1 text-white" method="post" action="./includes/signup.inc.php">
+
+                <!-- Alert -->
+                <?php
+                if (isset($_GET["error"])) {
+                    $err;
+                    if ($_GET["error"] == "emptyInputs") {
+                        $err = "Please fill all the fields.";
+                        echo '
+                        <div style="background-color: rgba(255,0,0,.2); border: 1px solid red;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <p style="margin:0;" class="text-white"><strong>Warning!</strong> ' . $err . '</p> 
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                ';
+                    } else if ($_GET["error"] == "passwordsNotMatch") {
+                        $err = "passwords did not match. Try again.";
+                        echo '
+                        <div style="background-color: rgba(255,0,0,.2); border: 1px solid red;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <p style="margin:0;" class="text-white"><strong>Warning!</strong> ' . $err . '</p> 
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                ';
+                    } else if ($_GET["error"] == "invalidUsername") {
+                        $err = "Invalid username. change it.";
+                        echo '
+                        <div style="background-color: rgba(255,0,0,.2); border: 1px solid red;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <p style="margin:0;" class="text-white"><strong>Warning!</strong> ' . $err . '</p> 
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>';
+                    } else if ($_GET["error"] == "invalidEmail") {
+                        $err = "Invalid email. Change your email.";
+                        echo '
+                        <div style="background-color: rgba(255,0,0,.2); border: 1px solid red;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <p style="margin:0;" class="text-white"><strong>Warning!</strong> ' . $err . '</p> 
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>';
+                    } else if ($_GET["error"] == "userExists") {
+                        $err = "User already exists. Change username or email.";
+                        echo '
+                        <div style="background-color: rgba(255,0,0,.2); border: 1px solid red;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <p style="margin:0;" class="text-white"><strong>Warning!</strong> ' . $err . '</p> 
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>';
+                    }
+
+                }
+
+                ?>
+                <!-- Alert -->
+
+
                 <div class="col-md-6 input-group-sm">
                     <label for="validationDefault01" class="form-label">First name</label>
                     <input type="text" class="form-control defalt-input-style text-white" id="validationDefault01"
-                        placeholder="First name" required>
+                        placeholder="First name" name="firstname" required>
                 </div>
                 <div class="col-md-6 input-group-sm">
                     <label for="validationDefault02" class="form-label">Last name</label>
                     <input type="text" class="form-control defalt-input-style text-white" id="validationDefault02"
-                        placeholder="Last name" required>
+                        placeholder="Last name" name="lastname" required>
                 </div>
                 <div class="col-md-12 input-group-sm">
                     <label for="validationDefaultUsername" class="form-label">Username</label>
                     <div class="input-group">
                         <span class="input-group-text defalt-input-style text-white" id="inputGroupPrepend2">@</span>
-                        <input type="text" class="form-control defalt-input-style text-white"
+                        <input name="username" type="text" class="form-control defalt-input-style text-white"
                             id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required
                             placeholder="Username">
                     </div>
                 </div>
                 <div class="col-md-6 input-group-sm">
                     <label for="validationDefault03" class="form-label">Email</label>
-                    <input type="email" class="form-control defalt-input-style text-white" id="validationDefault03"
-                        required placeholder="Email">
+                    <input name="email" type="email" class="form-control defalt-input-style text-white"
+                        id="validationDefault03" required placeholder="Email">
                 </div>
                 <div class="col-md-6 input-group-sm" style="font-size: small;">
                     <label for="validationDefault04" class="form-label ">Gender</label>
-                    <select class="form-select-sm form-select defalt-input-style text-white" id="validationDefault04"
-                        required>
+                    <select name="gender" class="form-select-sm form-select defalt-input-style text-white"
+                        id="validationDefault04" required>
                         <option selected disabled value="0">Select Gender</option>
                         <option value="m">Male</option>
                         <option value="f">Female</option>
@@ -48,13 +98,13 @@ include_once "./site-parts/header.php";
                 </div>
                 <div class="col-md-6 input-group-sm">
                     <label for="validationDefault05" class="form-label">Password</label>
-                    <input type="password" class="form-control defalt-input-style text-white" id="validationDefault05"
-                        required placeholder="Password">
+                    <input name="password" type="password" class="form-control defalt-input-style text-white"
+                        id="validationDefault05" required placeholder="Password">
                 </div>
                 <div class="col-md-6 input-group-sm">
                     <label for="validationDefault06" class="form-label">Repeat Password</label>
-                    <input type="password" class="form-control defalt-input-style text-white " id="validationDefault06"
-                        required placeholder="Password">
+                    <input name="passwordRepeat" type="password" class="form-control defalt-input-style text-white "
+                        id="validationDefault06" required placeholder="Password">
                 </div>
                 <!-- <div class="col-12">
                         <div class="form-check">
