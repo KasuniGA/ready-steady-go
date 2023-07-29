@@ -135,3 +135,26 @@ select {
 .card-default:hover {
     box-shadow: 0px 0px 10px var(--color-scale-yellow-3);
 }
+
+p {
+    margin: 0;
+    font-size: small;
+}
+
+.post-container-style {
+    box-shadow: 0px 0px 10px var(--color-scale-gray-7);
+    transition: ease 0.5s;
+    /* margin-top: 15px; */
+    /* margin-bottom: 15px; */
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    /* border-radius: 6px; */
+    /* border: 2px solid var(--color-border-default); */
+    background-color: var(--color-scale-gray-8);
+}
+
+input[type="text"] {
+    font-size: small;
+}
