@@ -101,6 +101,21 @@ select {
     justify-content: space-evenly;
 }
 
+.custom-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .card-default {
     position: relative;
     border-radius: 6px;
