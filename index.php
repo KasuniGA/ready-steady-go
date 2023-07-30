@@ -202,6 +202,214 @@ if (isset($_GET["err"])) {
 
 </section>
 
+<section class="defalt-container-style text-white mt-5" style="text-align:center;">
+    <h1>About Models</h1>
+</section>
+<section class="defalt-container-style text-white">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button style="background-color: var(--color-border-default);" class="accordion-button text-white"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Ferrari
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <strong>Ferrari: </strong>Ferrari is an illustrious Italian
+                    luxury sports car manufacturer with a storied racing heritage. Their iconic prancing horse logo
+                    represents exclusivity, speed, and elegance. Known for crafting high-performance vehicles, Ferraris
+                    feature cutting-edge technology, sleek designs, and a passionate following of enthusiasts worldwide.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed text-white"
+                    style="background-color: var(--color-border-default);" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Lamborghini
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <strong>Lamborghini: </strong> Lamborghini, the celebrated Italian
+                    automaker, is synonymous with extravagant supercars that push the boundaries of design and
+                    performance. Their striking aesthetics, powerful engines, and aerodynamic prowess make Lamborghinis
+                    a dream for automotive enthusiasts seeking the ultimate driving experience.
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button style="background-color: var(--color-border-default);"
+                    class="text-white accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Bugatti
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <strong>Bugatti: </strong> Bugatti, the prestigious French
+                    marque, stands at the forefront of automotive engineering and luxury. Their hypercars are a perfect
+                    fusion of speed, craftsmanship, and exclusivity. Bugatti's track record of producing some of the
+                    fastest, most sought-after vehicles showcases their commitment to pushing the limits of what's
+                    possible.
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="panelsStayOpen-heading4">
+                <button style="background-color: var(--color-border-default);"
+                    class="text-white accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapse4">
+                    Porsche
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-heading4">
+                <div class="accordion-body">
+                    <strong>Porsche: </strong> Porsche, the German sports car
+                    brand, is revered for its timeless designs and precision engineering. From iconic models like the
+                    911 to versatile SUVs like the Cayenne, Porsches offer a balance of performance and everyday
+                    usability. Porsche's racing heritage and innovative technology continue to captivate enthusiasts
+                    worldwide.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="panelsStayOpen-heading5">
+                <button style="background-color: var(--color-border-default);"
+                    class="text-white accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapse5">
+                    McLaren
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-heading5">
+                <div class="accordion-body">
+                    <strong>McLaren: </strong> McLaren, the British manufacturer, focuses on high-performance sports
+                    cars and supercars that excel on the track and the road. Embracing cutting-edge materials and
+                    aerodynamics, McLaren's vehicles deliver speed, agility, and refined craftsmanship, making them a
+                    top choice for driving enthusiasts.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="panelsStayOpen-heading6">
+                <button style="background-color: var(--color-border-default);"
+                    class="text-white accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapse6">
+                    Aston Martin
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-heading6">
+                <div class="accordion-body">
+                    <strong>Aston Martin: </strong> Aston Martin, a distinguished British luxury carmaker, exudes
+                    elegance and sophistication. Often associated with James Bond, Aston Martin's handcrafted vehicles
+                    blend timeless design with powerful performance. Driving an Aston Martin symbolizes a sense of style
+                    and refinement, catering to those who appreciate a touch of exclusivity.
+
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="panelsStayOpen-heading7">
+                <button style="background-color: var(--color-border-default);"
+                    class="text-white accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse7" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapse7">
+                    Koenigsegg
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapse7" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-heading7">
+                <div class="accordion-body">
+                    <strong>Koenigsegg: </strong> Koenigsegg: Koenigsegg, the Swedish hypercar manufacturer, is renowned
+                    for pushing boundaries in performance and innovation. Their limited-production vehicles boast
+                    record-breaking speed and cutting-edge technologies. Koenigsegg's hypercars are the epitome of
+                    automotive engineering excellence and cater to those seeking the extraordinary.
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="panelsStayOpen-heading8">
+                <button style="background-color: var(--color-border-default);"
+                    class="text-white accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse8" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapse8">
+                    Pagani
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapse8" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-heading8">
+                <div class="accordion-body">
+                    <strong>Pagani: </strong> Pagani: Pagani, the Italian hypercar company, creates automotive
+                    masterpieces that blend artistry and engineering. Hand-built and limited in production, Pagani's
+                    hypercars are unique and exclusive. Meticulous attention to detail, top-notch materials, and
+                    breathtaking designs define Pagani's commitment to delivering an unparalleled driving experience.
+
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="panelsStayOpen-heading9">
+                <button style="background-color: var(--color-border-default);"
+                    class="text-white accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse9" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapse9">
+                    Rolls-Royce
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapse9" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-heading9">
+                <div class="accordion-body">
+                    <strong>Rolls-Royce: </strong> Rolls-Royce: Rolls-Royce, the epitome of luxury and craftsmanship,
+                    represents the pinnacle of automotive excellence. Handcrafted with meticulous attention to detail,
+                    Rolls-Royce cars are symbols of opulence and exclusivity. The brand's commitment to providing the
+                    utmost in comfort and prestige makes each Rolls-Royce a bespoke masterpiece.
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="panelsStayOpen-heading10">
+                <button style="background-color: var(--color-border-default);"
+                    class="text-white accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse10" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapse10">
+                    Bentley
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapse10" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-heading10">
+                <div class="accordion-body">
+                    <strong>Bentley: </strong> Bentley: Bentley, the British luxury carmaker, exemplifies opulence and
+                    grand touring prowess. Their vehicles are crafted with meticulous attention to detail and showcase
+                    premium materials and cutting-edge technology. Bentley's reputation for comfort, refinement, and
+                    performance makes them a symbol of prestige and sophistication.
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <?php
