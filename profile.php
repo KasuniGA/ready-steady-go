@@ -84,6 +84,4 @@ echo '
     Hello ' . $_SESSION["firstName"] . " " . $_SESSION["lastName"] . '
 , Still you cannot edit your details.</section>';
 ?>
-<?php
-include_once "./site-parts/footer.php";
-?>
+<?php include_once './site-parts/footer.php'; ?>

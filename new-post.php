@@ -5,7 +5,6 @@ if (!isset($_SESSION["username"])) {
     exit();
 }
 ?>
-
 <section class="defalt-container-style text-white">
     Create new post
 </section>
@@ -71,5 +70,5 @@ if (!isset($_SESSION["username"])) {
     </form>
 </section>
 <?php
-include_once './site-parts/header.php';
+include_once './site-parts/footer.php';
 ?>

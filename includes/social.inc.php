@@ -12,6 +12,19 @@ function get_public_posts($conn)
         return false;
     }
 }
+function get_private_posts($conn)
+{
+    $username = $_SESSION["username"];
+    $userId = $_SESSION["userId"];
+
+    $sql = "SELECT * FROM `posts` WHERE postVisibility = 0 AND userId = $userId;";
+    $result = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($result) > 0) {
+        return $result;
+    } else {
+        return false;
+    }
+}
 
 function get_user($conn, $userId)
 {
