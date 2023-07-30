@@ -11,7 +11,7 @@ require_once "./includes/db.inc.php";
 ?>
 
 <section class="defalt-container-style"
-    style="position:relative;background: url('./resources/img/5.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; padding: 0;">
+    style="position:relative;background: url('./resources/img/7.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; padding: 0;">
     <div style="width:100%; height:100%; background-color: rgba(0, 0, 0, 0.4);">
         <div class="text-white rounded" style="padding: 100px 50px">
             <h1 style="color:white;">Share your thoughts. Have fun!</h1>

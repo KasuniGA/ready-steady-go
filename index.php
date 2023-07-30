@@ -92,20 +92,117 @@ if (isset($_GET["err"])) {
 
 <?php }
 ?>
-
-
-<section class="defalt-container-style text-white">
-    <p style="margin: 0px;">hello,
-        <?php
-        if (isset($_SESSION["username"])) {
-            echo $_SESSION["username"];
-        } else {
-            echo "User";
-        }
-        ?>
-    </p>
+<section class="defalt-container-style"
+    style="position:relative;background: url('./resources/img/5.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; padding: 0;">
+    <div style="width:100%; height:100%; background-color: rgba(0, 0, 0, 0.4);">
+        <div class="text-white rounded" style="padding: 100px 50px">
+            <h1 style="color:white;">Hello,
+                <?php
+                if (isset($_SESSION["username"])) {
+                    echo ($_SESSION["firstName"] . " " . $_SESSION["lastName"]);
+                } else {
+                    echo "User";
+                }
+                ?>
+            </h1>
+            <p>Social area is the best place to see the recent events...</p>
+            <a href="./social.php" class="btn btn-warning mt-5" style="width: 120px"><b>Go Social</b></a>
+        </div>
+    </div>
 </section>
+
 <?php include_once "./site-parts/gallery.php"; ?>
+
+<section class="defalt-container-style text-white mt-5" style="text-align:center;">
+    <h1>Brands</h1>
+</section>
+<section class="defalt-container-style text-white">
+    <table class="table-sec">
+        <tr>
+            <th class="table-div">
+                <img src="./resources/logo/ferrari.jpg" alt="" width="100%">
+            </th>
+            <th class="table-div text-table-div">
+                <h5>Ferrari</h5>
+            </th>
+        </tr>
+        <tr>
+            <th class="table-div text-table-div">
+                <h6>Lamborghini</h6>
+            </th>
+            <th class="table-div">
+                <img src="./resources/logo/lambo.jpg" alt="" width="100%">
+            </th>
+        </tr>
+        <tr>
+            <th class="table-div">
+                <img src="./resources/logo/Bugatti.jpg" alt="" width="100%">
+            </th>
+            <th class="table-div text-table-div">
+                <h6>Bugatti</h6>
+            </th>
+        </tr>
+        <tr>
+            <th class="table-div text-table-div">
+                <h6>Porsche</h6>
+            </th>
+            <th class="table-div">
+                <img src="./resources/logo/porsche.jpg" alt="" width="100%">
+            </th>
+        </tr>
+        <tr>
+            <th class="table-div">
+                <img src="./resources/logo/mclaren.jpg" alt="" width="100%">
+            </th>
+            <th class="table-div text-table-div">
+                <h6>McLaren</h6>
+            </th>
+        </tr>
+        <tr>
+            <th class="table-div text-table-div">
+                <h6>Aston Martin</h6>
+            </th>
+            <th class="table-div">
+                <img src="./resources/logo/AstonMartin.jpg" alt="" width="100%">
+            </th>
+        </tr>
+        <tr>
+            <th class="table-div">
+                <img src="./resources/logo/Koenigsegg.jpg" alt="" width="100%">
+            </th>
+            <th class="table-div text-table-div">
+                <h6>Koenigsegg</h6>
+            </th>
+        </tr>
+        <tr>
+            <th class="table-div text-table-div">
+                <h6>Pagani</h6>
+            </th>
+            <th class="table-div">
+                <img src="./resources/logo/pagani.jpg" alt="" width="100%">
+            </th>
+        </tr>
+        <tr>
+            <th class="table-div">
+                <img src="./resources/logo/Rolls-Royce.jpg" alt="" width="100%">
+            </th>
+            <th class="table-div text-table-div">
+                <h6>Rolls-Royce</h6>
+            </th>
+        </tr>
+        <tr>
+            <th class="table-div text-table-div">
+                <h6>Bentley</h6>
+            </th>
+            <th class="table-div">
+                <img src="./resources/logo/Bentley.jpg" alt="" width="100%">
+            </th>
+        </tr>
+    </table>
+
+</section>
+
+
 
 <?php
 include_once "./site-parts/footer.php";

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/colors.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/signup.css">
+    <link rel="stylesheet" href="./styles/index-parts.css">
 </head>
 
 <body>
@@ -32,9 +33,6 @@
                             <a class="nav-link active" aria-current="page" href="./index.php"><b>Home</b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about-us.html"><b>About Us</b></a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="./new-post.php"><b>New post</b></a>
                         </li>
                         <li class="nav-item dropdown">
@@ -47,6 +45,9 @@
                                 <li><a class="dropdown-item" href="./social.php"><b>Social</b></a></li>
                                 <li><a class="dropdown-item" href="./private.php"><b>Private</b></a></li>
                             </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html"><b>About Us</b></a>
+                        </li>
                         </li>
                     </ul>
                     <div class=""
