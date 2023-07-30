@@ -28,8 +28,8 @@
                     <img src="<?php echo $row["postImg"] ?>" data-mdb-img="<?php echo $row["postImg"] ?>" alt=""
                         class="w-100 mb-2 mb-md-4 shadow-1-strong gallery-img" />
                 </div> -->
-                <div class="col-lg-6" style="overflow: hidden;">
-                    <div class="image-container" style="">
+                <div class="col-lg-6 mb-4" style="overflow: hidden;">
+                    <div class="image-container w-100 h-100">
                         <img src="<?php echo $row["postImg"] ?>" data-mdb-img="<?php echo $row["postImg"] ?>" alt=""
                             class="w-100  shadow-1-strong gallery-img" />
                     </div>

@@ -119,8 +119,8 @@ if (isset($_GET["err"])) {
 <section class="defalt-container-style text-white">
     <table class="table-sec">
         <tr>
-            <th class="table-div">
-                <img src="./resources/logo/ferrari.jpg" alt="" width="100%">
+            <th class="table-div image-container">
+                <img class="brand-img" src="./resources/logo/ferrari.jpg" alt="" width="100%">
             </th>
             <th class="table-div text-table-div">
                 <h5>Ferrari</h5>
@@ -130,13 +130,13 @@ if (isset($_GET["err"])) {
             <th class="table-div text-table-div">
                 <h6>Lamborghini</h6>
             </th>
-            <th class="table-div">
-                <img src="./resources/logo/lambo.jpg" alt="" width="100%">
+            <th class="table-div image-container">
+                <img class="brand-img" src="./resources/logo/lambo.jpg" alt="" width="100%">
             </th>
         </tr>
         <tr>
-            <th class="table-div">
-                <img src="./resources/logo/Bugatti.jpg" alt="" width="100%">
+            <th class="table-div image-container">
+                <img class="brand-img" src="./resources/logo/Bugatti.jpg" alt="" width="100%">
             </th>
             <th class="table-div text-table-div">
                 <h6>Bugatti</h6>
@@ -146,13 +146,13 @@ if (isset($_GET["err"])) {
             <th class="table-div text-table-div">
                 <h6>Porsche</h6>
             </th>
-            <th class="table-div">
-                <img src="./resources/logo/porsche.jpg" alt="" width="100%">
+            <th class="table-div image-container">
+                <img class="brand-img" src="./resources/logo/porsche.jpg" alt="" width="100%">
             </th>
         </tr>
         <tr>
-            <th class="table-div">
-                <img src="./resources/logo/mclaren.jpg" alt="" width="100%">
+            <th class="table-div image-container">
+                <img class="brand-img" src="./resources/logo/mclaren.jpg" alt="" width="100%">
             </th>
             <th class="table-div text-table-div">
                 <h6>McLaren</h6>
@@ -162,13 +162,13 @@ if (isset($_GET["err"])) {
             <th class="table-div text-table-div">
                 <h6>Aston Martin</h6>
             </th>
-            <th class="table-div">
-                <img src="./resources/logo/AstonMartin.jpg" alt="" width="100%">
+            <th class="table-div image-container">
+                <img class="brand-img" src="./resources/logo/AstonMartin.jpg" alt="" width="100%">
             </th>
         </tr>
         <tr>
-            <th class="table-div">
-                <img src="./resources/logo/Koenigsegg.jpg" alt="" width="100%">
+            <th class="table-div image-container">
+                <img class="brand-img" src="./resources/logo/Koenigsegg.jpg" alt="" width="100%">
             </th>
             <th class="table-div text-table-div">
                 <h6>Koenigsegg</h6>
@@ -178,13 +178,13 @@ if (isset($_GET["err"])) {
             <th class="table-div text-table-div">
                 <h6>Pagani</h6>
             </th>
-            <th class="table-div">
-                <img src="./resources/logo/pagani.jpg" alt="" width="100%">
+            <th class="table-div image-container">
+                <img class="brand-img" src="./resources/logo/pagani.jpg" alt="" width="100%">
             </th>
         </tr>
         <tr>
-            <th class="table-div">
-                <img src="./resources/logo/Rolls-Royce.jpg" alt="" width="100%">
+            <th class="table-div image-container">
+                <img class="brand-img" src="./resources/logo/Rolls-Royce.jpg" alt="" width="100%">
             </th>
             <th class="table-div text-table-div">
                 <h6>Rolls-Royce</h6>
@@ -194,8 +194,8 @@ if (isset($_GET["err"])) {
             <th class="table-div text-table-div">
                 <h6>Bentley</h6>
             </th>
-            <th class="table-div">
-                <img src="./resources/logo/Bentley.jpg" alt="" width="100%">
+            <th class="table-div image-container">
+                <img class="brand-img" src="./resources/logo/Bentley.jpg" alt="" width="100%">
             </th>
         </tr>
     </table>
