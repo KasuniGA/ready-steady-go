@@ -83,18 +83,31 @@ if ($results) {
                 <div
                     style="width: 100%; height: 2px; background-color: var(--color-border-default); margin-top: 15px; margin-bottom: 10px;">
                 </div>
-                <div class="collapse post-container-style text-white" id="comment-<?php echo $row["postId"]; ?>">
+                <div class="collapse post-container-style text-white" id="comment-<?php echo $row["postId"]; ?>"
+                    style="margin:0;">
                     <div>
                         <?php
                         $comments = get_comments($conn, $row["postId"]);
                         if ($comments) {
                             while ($comment = mysqli_fetch_assoc($comments)) { ?>
 
-                                <div class="mb-4">
-                                    <p class="text-white">
-                                        <span><b>
-                                                <?php echo $comment["username"]; ?>
-                                            </b></span>
+                                <div class="comment-hover">
+                                    <div class="text-white" style="display:flex; justify-content: space-between;">
+                                        <p><span><b>
+                                                    <?php echo $comment["username"]; ?>
+                                                </b></span></p>
+                                        <?php
+                                        if ($comment["userId"] == $_SESSION["userId"]) {
+                                            ?>
+                                            <form method="post" action="./includes/comments.inc.php">
+                                                <input name="postId" value="<?php echo $row["postId"] ?>" type="text" hidden>
+                                                <input name="commentId" value="<?php echo $comment["commentId"] ?>" type="text" hidden>
+                                                <button name="comment_delete" class="btn btn-sm btn-danger">Delete</button>
+                                            </form>
+                                            <?php
+                                        }
+                                        ?>
+                                    </div>
                                     <p>
                                         <?php echo $comment["comment"]; ?>
                                     </p>

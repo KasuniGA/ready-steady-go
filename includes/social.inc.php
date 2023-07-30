@@ -92,7 +92,6 @@ function comment($conn, $userId, $postId, $username, $comment)
 
 function like($conn, $postId, $userId)
 {
-
     $sql = "INSERT INTO `likes` (userId, postId) VALUES ('$userId','$postId');";
     $result = mysqli_query($conn, $sql);
     echo $result;
@@ -101,12 +100,10 @@ function like($conn, $postId, $userId)
     } else {
         return false;
     }
-
 }
 
 function unlike($conn, $postId, $userId)
 {
-
     // DELETE FROM likes WHERE `likes`.`likeId` = 2"
     $sql = "DELETE FROM `likes` WHERE `likes`.`userId` = $userId AND `likes`.`postId` = $postId;";
     $result = mysqli_query($conn, $sql);
@@ -116,6 +113,16 @@ function unlike($conn, $postId, $userId)
     } else {
         return false;
     }
+}
 
+function delete_comment($conn, $postId, $commentId, $userId)
+{
+    $sql = "DELETE FROM `comments` WHERE `comments`.`postId` = $postId AND `comments`.`commentId` = $commentId;";
+    $result = mysqli_query($conn, $sql);
 
+    if ($result) {
+        return $result;
+    } else {
+        return false;
+    }
 }

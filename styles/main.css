@@ -158,3 +158,12 @@ p {
 input[type="text"] {
     font-size: small;
 }
+
+.comment-hover {
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.comment-hover:hover {
+    background-color: var(--color-border-default);
+}
