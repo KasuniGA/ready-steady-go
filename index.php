@@ -5,11 +5,14 @@ include_once "./site-parts/header.php";
 <?php
 if (isset($_GET["msg"])) {
     $msg;
+    $link;
     if ($_GET["msg"] == "shareComplete1") {
         $msg = "your post is shared publicly :) ";
+        $link = "./social.php";
     }
     if ($_GET["msg"] == "shareComplete0") {
         $msg = "your post is shared privately :) ";
+        $link = "./private.php";
     }
 
     ?>
@@ -36,7 +39,7 @@ if (isset($_GET["msg"])) {
             </svg>
             <div style="width: 100%;">
                 <strong>Post shared! </strong>
-                <?php echo $msg; ?><a href="./orders.php">See</a>
+                <?php echo $msg; ?><a href="<?php echo $link; ?>">See</a>
             </div>
         </div>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

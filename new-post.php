@@ -1,9 +1,9 @@
 <?php
-// if (!isset($_SESSION["username"])) {
-//     header('Location: ./index.php');
-//     exit();
-// }
 include_once './site-parts/header.php';
+if (!isset($_SESSION["username"])) {
+    header("Location: ./index.php?err=pleaseLogin");
+    exit();
+}
 ?>
 
 <section class="defalt-container-style text-white">

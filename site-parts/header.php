@@ -37,6 +37,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./new-post.php">New post</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./social.php">Social</a>
+                        </li>
                     </ul>
                     <div class=""
                         style="display: flex; justify-content: center; align-items: center; padding:0; width:300px">

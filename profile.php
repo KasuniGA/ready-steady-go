@@ -28,9 +28,10 @@ if (!isset($_SESSION["username"])) {
             <label for="validationDefaultUsername" class="form-label">Username</label>
             <div class="input-group">
                 <span class="input-group-text defalt-input-style text-white" id="inputGroupPrepend2">@</span>
-                <input value="<?php echo $_SESSION["username"]; ?>" name="username" type="text"
+                <input disabled value="<?php echo $_SESSION["username"]; ?>" name="username" type="text"
                     class="form-control defalt-input-style text-white" id="validationDefaultUsername"
-                    aria-describedby="inputGroupPrepend2" required placeholder="Username">
+                    aria-describedby="inputGroupPrepend2" required placeholder="Username" style=" border: 2px solid var(--color-border-default);
+    background-color: var(--color-background-defalt);">
             </div>
         </div>
         <div class="col-md-6 input-group-sm">

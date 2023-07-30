@@ -98,6 +98,10 @@ label {
     font-size: small;
 }
 
+input[type="text"][readonly] {
+    font-size: small;
+}
+
 @media screen and (max-width: 1000px) {
     .signup-left {
         display: none;
