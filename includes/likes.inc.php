@@ -13,7 +13,6 @@ require_once './social.inc.php';
 
 // like($conn, $postId, $userId)
 if (isset($_POST["like"])) {
-    echo "likeee";
     $result = like($conn, $_POST["postId"], $_SESSION["userId"]);
     if (!$result) {
         header("Location: ../social.php?err=Server error. Contact the developers");

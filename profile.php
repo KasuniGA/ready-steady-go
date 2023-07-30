@@ -1,8 +1,10 @@
 <?php
+$title = "Profile";
 include_once "./site-parts/header.php";
 
 if (!isset($_SESSION["username"])) {
-    header('Location: ./index.php');
+    include_once "./site-parts/login-message.php";
+    include_once "./site-parts/footer.php";
     exit();
 }
 ?>

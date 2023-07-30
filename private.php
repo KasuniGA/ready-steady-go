@@ -1,8 +1,13 @@
-<?php include_once './site-parts/header.php';
+<?php
+$title = "Private Area";
+include_once "./site-parts/header.php";
+
 if (!isset($_SESSION["username"])) {
-    header("Location: ./index.php?err=pleaseLogin");
+    include_once "./site-parts/login-message.php";
+    include_once "./site-parts/footer.php";
     exit();
-} ?>.
+}
+?>
 
 <section class="defalt-container-style"
     style="position:relative;background: url('./resources/img/4.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; padding: 0;">

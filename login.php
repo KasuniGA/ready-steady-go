@@ -1,4 +1,5 @@
 <?php
+$title = "Log In";
 include_once "./site-parts/header.php";
 ?>
 <section class="signup-content ">

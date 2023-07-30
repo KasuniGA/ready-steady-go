@@ -1,4 +1,5 @@
 <?php
+$title = "Sign Up";
 include_once "./site-parts/header.php";
 ?>
 <section class="signup-content ">

@@ -1,6 +1,6 @@
 <?php
+$title = "Home Page";
 include_once "./site-parts/header.php";
-// <!-- Alert -->
 ?>
 <?php
 if (isset($_GET["msg"])) {

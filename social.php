@@ -1,13 +1,16 @@
-<?php include_once './site-parts/header.php'; ?>.
-
 <?php
+$title = "Social Area";
+include_once "./site-parts/header.php";
+
 if (!isset($_SESSION["username"])) {
-    header("Location: ./index.php?err=pleaseLogin");
+    include_once "./site-parts/login-message.php";
+    include_once "./site-parts/footer.php";
     exit();
 }
+?>
+<?php
 require_once "./includes/social.inc.php";
 require_once "./includes/db.inc.php";
-
 ?>
 
 <section class="defalt-container-style"
