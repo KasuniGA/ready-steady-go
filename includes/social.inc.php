@@ -105,7 +105,6 @@ function like($conn, $postId, $userId)
 {
     $sql = "INSERT INTO `likes` (userId, postId) VALUES ('$userId','$postId');";
     $result = mysqli_query($conn, $sql);
-    echo $result;
     if ($result) {
         return $result;
     } else {
