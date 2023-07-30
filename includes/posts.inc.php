@@ -31,4 +31,9 @@ function create_post($conn, $postCaption, $postImg, $postVisibility)
 
 require_once "./db.inc.php";
 create_post($conn, $_POST["postCaption"], $_POST["postImg"], $_POST["postVisibility"]);
-header('Location: ../index.php');
+if ($_POST["postVisibility"]) {
+    header('Location: ../index.php?msg=shareComplete1');
+}
+if (!$_POST["postVisibility"]) {
+    header('Location: ../index.php?msg=shareComplete0');
+}
