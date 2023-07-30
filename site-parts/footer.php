@@ -4,7 +4,7 @@
 
 
 <section class="defalt-container-style text-white mt-5 mb-5">
-    <p class="mb-2 mt-3" style="text-align:center;">Developed by Group 33 @ NSBM Green University</p>
+    <p class="mb-2 mt-3" style="text-align:center;">Developed by Web Group 25 @ NSBM Green University</p>
     <p class="mb-3" style="text-align:center;">© Copyright 2023 Ready Stedy Go | All Rights Reserved.</p>
 </section>
 
