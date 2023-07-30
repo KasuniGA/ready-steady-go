@@ -1,8 +1,6 @@
 <?php
 function get_public_posts($conn)
 {
-    $username = $_SESSION["username"];
-    $userId = $_SESSION["userId"];
 
     $sql = "SELECT * FROM `posts` WHERE postVisibility = 1;";
     $result = mysqli_query($conn, $sql);

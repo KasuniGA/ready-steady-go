@@ -27,30 +27,25 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul style="font-size: 13.5px;" class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.php"><b>Home</b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about-us.html">About Us</a>
+                            <a class="nav-link" href="./about-us.html"><b>About Us</b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./new-post.php">New post</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./social.php">Social</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./private.php">Private</a>
+                            <a class="nav-link" href="./new-post.php"><b>New post</b></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                                <b>Posts</b>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown"
+                                style="font-size: 13.5px;">
+                                <li><a class="dropdown-item" href="./social.php"><b>Social</b></a></li>
+                                <li><a class="dropdown-item" href="./private.php"><b>Private</b></a></li>
                             </ul>
                         </li>
                     </ul>

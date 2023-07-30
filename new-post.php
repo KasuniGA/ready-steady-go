@@ -5,8 +5,14 @@ if (!isset($_SESSION["username"])) {
     exit();
 }
 ?>
-<section class="defalt-container-style text-white">
-    Create new post
+<section class="defalt-container-style"
+    style="position:relative;background: url('./resources/img/3.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; padding: 0;">
+    <div style="width:100%; height:100%; background-color: rgba(0, 0, 0, 0.4);">
+        <div class="text-white rounded" style="padding: 100px 50px">
+            <h1 style="color:white;">Create a new post</h1>
+            <p>Post your story to the public!</p>
+        </div>
+    </div>
 </section>
 <section class="defalt-container-style text-white">
     <form class="row g-1 text-white" method="post" action="./includes/posts.inc.php">

@@ -111,3 +111,15 @@ function loginUser($conn, $username, $password)
         exit();
     }
 }
+
+function edit_user($conn, $firstName, $lastName, $userEmail, $userGender, $username)
+{
+    $sql = "UPDATE users SET firstName = '$firstName', lastName = '$lastName', userEmail = '$userEmail', userGender = '$userGender' WHERE username = '$username';";
+    $result = mysqli_query($conn, $sql);
+    if ($result) {
+        return $result;
+    } else {
+        return false;
+    }
+
+}
