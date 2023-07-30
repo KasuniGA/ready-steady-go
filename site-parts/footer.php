@@ -3,6 +3,11 @@
     crossorigin="anonymous"></script>
 
 
+<section class="defalt-container-style text-white mt-5 mb-5">
+    <p class="mb-2 mt-3" style="text-align:center;">Developed by Group 33 @ NSBM Green University</p>
+    <p class="mb-3" style="text-align:center;">© Copyright 2023 Ready Stedy Go | All Rights Reserved.</p>
+</section>
+
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
